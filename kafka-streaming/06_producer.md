@@ -28,6 +28,8 @@ Nun wird ein _Kafka-Producer_ (`producer`) initialisiert:
 producer = KafkaProducer(bootstrap_servers=SERVER)
 </pre>
 
+<center style="font-size: 75%;">Unter Einbezug von [6]</center>
+
 Die Simulation basiert nicht auf echtem Kursverhalten der Börse, sondern auf Zufall. Um zu verhindern, dass Preise innerhalb einer Iteration "von 0 auf 100" springen, werden die aktuellen Preise in der Liste `current_price` zwischengespeichert (mehr dazu in der Funktion `gen_data`). Initial haben alle Aktien den Wert `50` (in €).
 
 <pre class="file" data-filename="boerse.py" data-target="append">
@@ -63,6 +65,8 @@ def main():
         producer.flush()
         sleep(uniform(1, 3))
 </pre>
+
+<center style="font-size: 75%;">Unter Einbezug von [6]</center>
 
 Jetzt bleibt nur noch übrig, die `main`-Funktion beim Start aufzurufen:
 

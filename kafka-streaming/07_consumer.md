@@ -42,6 +42,8 @@ if __name__ == '__main__':
         print(f'Aktie {m.partition}: {m.value}')
 </pre>
 
+<center style="font-size: 75%;">Unter Einbezug von [7]</center>
+
 # Ergebnis
 
 Die von `boerse.py`{{open}} generierten Kursänderungen lassen sich nun durch das Skript `aktionaer.py`{{open}} auslesen. Welche Aktien beobachtet werden, lässt sich durch die Kommandozeilenparameter definieren. Möglichkeiten:
