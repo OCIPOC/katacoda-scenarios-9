@@ -6,7 +6,6 @@ TOPIC = 'Aktienkurse'
 SERVER = 'localhost:9092'
 
 if __name__ == '__main__':
-
     stocks = [int(i) for i in sys.argv[1:]]
     print(f'Ausgewählte Aktien: {stocks}')
 
@@ -17,3 +16,6 @@ if __name__ == '__main__':
     )
     partitions = [TopicPartition(TOPIC, i) for i in stocks]
     consumer.assign(partitions)
+
+    for m in consumer:
+        print(m)
