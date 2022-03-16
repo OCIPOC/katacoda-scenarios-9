@@ -1,6 +1,3 @@
-`touch boerse.py`{{execute}}
-
-<pre class="file" data-filename="boerse.py" data-target="append">
 from time import sleep
 from random import uniform
 import json
@@ -41,4 +38,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-</pre>

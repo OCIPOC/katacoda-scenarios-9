@@ -1,4 +1,6 @@
-Bevor mit der Programmierung des _Producers_ (Börse) oder der _Consumer_ (Aktionär*innen) begonnen wird, muss zunächst das _Topic_ "Aktienkurse" erstellt werden. Dazu kann das mit _Apache Kafka_ mitgelieferte Skript `kafka-topics.sh` verwendet werden:
+# _Topic_ anlegen
+
+Bevor mit der Programmierung des _Producers_ (Börse) oder der _Consumer_ (Aktionär\*innen) begonnen wird, muss zunächst das _Topic_ "Aktienkurse" erstellt werden. Dazu kann das mit _Apache Kafka_ mitgelieferte Skript `kafka-topics.sh` verwendet werden:
 
 ```bash
 kafka-topics.sh \
@@ -27,8 +29,13 @@ kafka-topics.sh \
 Erwartete Ausgabe:
 
 ```bash
-Topic: aktienkurse      TopicId: l0HEWl4ZSNqNCYUqVguOjw PartitionCount: 2       ReplicationFactor: 1    Configs: segment.bytes=1073741824
-        Topic: aktienkurse      Partition: 0    Leader: 0       Replicas: 0     Isr: 0
-        Topic: aktienkurse      Partition: 1    Leader: 0       Replicas: 0     Isr: 0
+Topic: Aktienkurse      TopicId: xxxxxxxxxxxxxxxxxxxxxx PartitionCount: 2       ReplicationFactor: 1    Configs: segment.bytes=1073741824
+        Topic: Aktienkurse      Partition: 0    Leader: 0       Replicas: 0     Isr: 0
+        Topic: Aktienkurse      Partition: 1    Leader: 0       Replicas: 0     Isr: 0
 ```
 
+# Python-Paket installieren
+
+Da die Umsetzung in Python geschieht, wird das Python-Paket `kafka-python` verwendet, um die Realisierung durchzuführen. Mit folgendem Befehl kann das Modul installiert werden:
+
+`python3 -m pip install kafka-python==2.0.2`{{execute}}
