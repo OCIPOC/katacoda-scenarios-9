@@ -52,7 +52,25 @@
     "environment": {
         "uilayout": "editor-terminal",
         "uisettings": "python",
-        "hideHiddenFiles": false
+        "hideHiddenFiles": false,
+        "terminals": [
+            {
+                "name": "Börse",
+                "target": "host01"
+            },
+            {
+                "name": "Aktionär*in 0",
+                "target": "host01"
+            },
+            {
+                "name": "Aktionär*in 1",
+                "target": "host01"
+            },
+            {
+                "name": "Aktionär*in 0/1",
+                "target": "host01"
+            }
+        ]
     },
     "backend": {
         "imageid": "ubuntu:2004"
