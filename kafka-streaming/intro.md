@@ -23,7 +23,7 @@ Zum Nachvollziehen sind grundlegende Kenntnisse der _Unix-Shell_, spezifischer `
 3. Installation
 4. Funktionsweise
 5. Projektvorstellung
-6. _Topic_ erstellen
+6. Projektvorbereitungen
 7. _Producer_ erstellen
 8. _Consumer_ erstellen
 9. Projekt in Aktion
