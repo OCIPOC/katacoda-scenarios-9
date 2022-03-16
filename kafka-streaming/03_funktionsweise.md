@@ -26,6 +26,6 @@ Wie der Name suggeriert, konsumieren beziehungsweise verarbeiten _Consumer_ neue
 
 Infolgedessen ist es möglich und sinnvoll mehrere _Consumer_ für verschiedene _Partitionen_, wie in der folgenden Grafik abgebildet, zu verwenden. Dies beugt den beschrieben Flaschenhals vor, da nicht ein einziger _Consumer_ alle Nachrichten verarbeiten muss.
 
-![Partitionen zur Parallelisierung.](./assets/kafka-partition-parallelism.webp "Partitionen zur Parallelisierung.")
+![Partitionen zur Parallelisierung.](./assets/kafka-partition-parallelism.png "Partitionen zur Parallelisierung.")
 
 <center style="font-size: 75%;">Partitionen zur Parallelisierung [4].</center>
