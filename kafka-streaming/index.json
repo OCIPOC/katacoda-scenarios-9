@@ -1,6 +1,6 @@
 {
     "title": "Praktische Einführung in Apache Kafka",
-    "description": "Einführung in die Grundlagen und Entwickeln einer Auftragssystems für Versanddienstleister.",
+    "description": "Einführung in die Grundlagen und Implementation eines Messaging-Systems für fiktive Aktienkurse in Python.",
     "difficulty": "Anfänger",
     "time": "15 Minuten",
     "details": {
