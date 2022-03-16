@@ -1,6 +1,6 @@
 # Implementation
 
-Um den _Producer_ beziehungsweise die Börse zu simulieren, wird zunächst eine neue Python-Datei angelegt:
+Um den _Producer_ beziehungsweise die Börse zu simulieren, wird zunächst eine neue _Python-Datei_ angelegt:
 
 `touch boerse.py`{{execute T1}}
 

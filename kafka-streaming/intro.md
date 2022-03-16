@@ -1,6 +1,6 @@
 # Beschreibung
 
-In diesem Szenario lernen Sie die weit verbreitete _Streaming-Plattform Apache_ _Kafka_ und dessen Eigenschaften kennen. Dabei werden Themen von den Grundlagen bis zur Integration im Kontext eines Python-Programms, anhand eines praktischen Beispiels, behandelt.
+In diesem Szenario lernen Sie die weit verbreitete _Streaming-Plattform Apache_ _Kafka_ und dessen Eigenschaften kennen. Dabei werden Themen von den Grundlagen bis zur Integration im Kontext eines _Python-Programms_, anhand eines praktischen Beispiels, behandelt.
 
 # Lernziele
 
@@ -8,7 +8,7 @@ In diesem Szenario lernen Sie die weit verbreitete _Streaming-Plattform Apache_ 
 -   Installation von _Kafka_.
 -   Funktionsweise von _Kafka_.
 -   Ein- / Auslesen von Daten.
--   Implementation eines _Messaging-Systems_ für fiktive Aktienkurse in Python.
+-   Implementation eines _Messaging-Systems_ für fiktive Aktienkurse in _Python_.
 
 # Voraussetzungen
 

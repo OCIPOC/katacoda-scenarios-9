@@ -1,6 +1,6 @@
 # Implementation
 
-Um den _Consumer_ für Aktionär\*innen zu implementieren, wird zunächst eine neue Python-Datei angelegt:
+Um den _Consumer_ für Aktionär\*innen zu implementieren, wird zunächst eine neue _Python-Datei_ angelegt:
 
 `touch aktionaer.py`{{execute T1}}
 

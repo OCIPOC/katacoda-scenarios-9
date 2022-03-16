@@ -38,9 +38,9 @@ Topic: Aktienkurse      TopicId: xxxxxxxxxxxxxxxxxxxxxx PartitionCount: 2       
         Topic: Aktienkurse      Partition: 1    Leader: 0       Replicas: 0     Isr: 0
 ```
 
-# Python-Paket installieren
+# _Python-Paket_ installieren
 
-Da die Umsetzung in Python geschieht, wird das Python-Paket `kafka-python` verwendet, um die Realisierung durchzuführen. Mit folgendem Befehl kann das Modul installiert werden:
+Da die Umsetzung in _Python_ geschieht, wird das _Python-Paket_ `kafka-python` verwendet, um die Realisierung durchzuführen. Mit folgendem Befehl kann das Modul installiert werden:
 
 `python3 -m pip install kafka-python==2.0.2`{{execute T1}}
 
