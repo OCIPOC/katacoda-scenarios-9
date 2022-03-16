@@ -1,10 +1,12 @@
-Für den _Producer_ beziehungsweise die Börse zu simulieren wird zunächst eine neue Python-Datei angelegt:
+# Implementation
+
+Um den _Producer_ beziehungsweise die Börse zu simulieren, wird zunächst eine neue Python-Datei angelegt:
 
 `touch boerse.py`{{execute}}
 
 Die Datei `boerse.py`{{open}} lässt sich nun im Editor öffnen. Zunächst werden die erforderlichen Bibliotheken importiert:
 
-<pre class="file" data-filename="boerse.py" data-target="append">
+<pre class="file" data-filename="boerse.py" data-target="replace">
 from time import sleep
 from random import uniform
 import json
@@ -26,7 +28,7 @@ Nun wird ein _Kafka-Producer_ (`producer`) initialisiert:
 producer = KafkaProducer(bootstrap_servers=SERVER)
 </pre>
 
-Die Simulation basiert nicht auf echtem Kursverhalten der Börse, sondern auf Zufall. Um zu verhindern, dass Preise innerhalb einer Iteration "von 0 auf 100" springen, werden die aktuellen Preise in der Liste `current_price` zwischengespeichert. Initial haben alle Aktien den Wert `50` (in €).
+Die Simulation basiert nicht auf echtem Kursverhalten der Börse, sondern auf Zufall. Um zu verhindern, dass Preise innerhalb einer Iteration "von 0 auf 100" springen, werden die aktuellen Preise in der Liste `current_price` zwischengespeichert (mehr dazu in der Funktion `gen_data`). Initial haben alle Aktien den Wert `50` (in €).
 
 <pre class="file" data-filename="boerse.py" data-target="append">
 current_price = [50] * NUMBER_OF_STOCKS
@@ -68,3 +70,11 @@ Jetzt bleibt nur noch übrig, die `main`-Funktion beim Start aufzurufen:
 if __name__ == '__main__':
     main()
 </pre>
+
+# Ergebnis
+
+Das Skript `boerse.py`{{open}} generiert zufällige Börsenkurs, die an das _Topic_ "Aktienkurse" des _Apache Kafka_ Servers gesendet werden. Kursänderungen einer Aktie werden immer in der gleichen Partition gespeichert. Das Skript kann man wie folgt starten:
+
+`python3 boerse.py`{{execute}}
+
+Im Terminal sollten jetzt Kursänderungen der Aktien `0` und `1` regelmäßig erscheinen. Wir lassen den Prozess vorerst laufen und widmen uns dem Skript für Aktionär\*innen im nächsten Kapitel ...
