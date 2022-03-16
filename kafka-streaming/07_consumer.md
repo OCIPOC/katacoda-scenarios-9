@@ -27,6 +27,5 @@ if __name__ == '__main__':
     consumer.assign(partitions)
 
     for m in consumer:
-        print(m)
-
+        print(f'Aktie {m.partition}: {m.value}')
 </pre>
