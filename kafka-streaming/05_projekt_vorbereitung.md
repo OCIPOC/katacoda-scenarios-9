@@ -1,6 +1,10 @@
+![Datenstrom des Aktienprojektes.](./assets/aktien.png "Datenstrom des Aktienprojektes.")
+
+<center style="font-size: 75%;">Datenstrom des Aktienprojektes.</center>
+
 # _Topic_ anlegen
 
-Bevor mit der Programmierung des _Producers_ (Börse) oder der _Consumer_ (Aktionär\*innen) begonnen wird, muss zunächst das _Topic_ "Aktienkurse" erstellt werden. Dazu kann das mit _Apache Kafka_ mitgelieferte Skript `kafka-topics.sh` verwendet werden:
+Bevor mit der Programmierung des _Producers_ (Börse) oder der _Consumer_ (Aktionär\*innen) begonnen wird, muss zunächst das _Topic_ "Aktienkurse" erstellt werden. Hierbei ist wichtig, dass `2` Partitionen angelegt werden, damit sich, wie in der obigen Abbildung, zwei Aktienkurse speichern lassen. Dazu kann das mit _Apache Kafka_ mitgelieferte Skript `kafka-topics.sh` verwendet werden:
 
 ```bash
 kafka-topics.sh \

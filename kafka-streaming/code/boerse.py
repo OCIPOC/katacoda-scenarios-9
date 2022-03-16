@@ -8,14 +8,13 @@ TOPIC = 'Aktienkurse'
 SERVER = 'localhost:9092'
 NUMBER_OF_STOCKS = 2
 
-last_price = [50] * NUMBER_OF_STOCKS
-producer = KafkaProducer(
-    bootstrap_servers=SERVER
-)
+producer = KafkaProducer(bootstrap_servers=SERVER)
+
+current_price = [50] * NUMBER_OF_STOCKS
 
 def gen_data(stock: int) -> str:
-    new_price = last_price[stock] * uniform(.95, 1.05)
-    last_price[stock] = new_price
+    new_price = current_price[stock] * uniform(.9, 1.1)
+    current_price[stock] = new_price
     data = {
         'timestamp': datetime.now().isoformat(),
         'value': new_price,
