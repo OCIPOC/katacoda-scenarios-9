@@ -8,7 +8,7 @@ Ein _Topic_ besteht aus einer oder mehreren _Partitionen_. In der Einführung wu
 
 _Partitionen_ in _Topis_ lassen sich auch verwenden, um Untergruppen zu bilden. So können Beispielsweise Daten zu einem bestimmten Aktienkurs in einer eigenen Partition gehandhabt werden.
 
-![Visualisierung Partition.](./img/kafka-partition.png "Visualisierung Partition.")
+![Visualisierung Partition.](./assets/kafka-partition.png "Visualisierung Partition.")
 
 <center style="font-size: 75%;">Visualisierung Partition [2].</center>
 
@@ -20,12 +20,12 @@ _Producer_ werden die Teilenehmer in einem System genannt, die neue Nachrichten 
 
 Wie der Name suggeriert, konsumieren beziehungsweise verarbeiten _Consumer_ neue Nachrichten eines _Topics_. Wird allerdings ein _Consumer_ auf alle _Partitionen_ eines _Topics_ angesetzt, kann dies schnell zu einem Flaschenhals führen, da die Gesamtheit der _Producer_ ein zu hohes Nachrichtenaufkommen für einen einzigen _Consumer_ generieren kann [4]. Wichtig anzumerken ist, dass die _Producer_ aufgrund der Natur von _Messaging-Systemen_ weiterhin in eigener Geschwindigkeit senden können, der _Consumer_ allerdings immer weiter vom Ist-Zustand abgehängt wird.
 
-![Verhältnis zwischen Producer, Partitionen und Consumer.](./img/kafka-producer-partition-consumer.png "Verhältnis zwischen Producer, Partitionen und Consumer.")
+![Verhältnis zwischen Producer, Partitionen und Consumer.](./assets/kafka-producer-partition-consumer.png "Verhältnis zwischen Producer, Partitionen und Consumer.")
 
 <center style="font-size: 75%;">Verhältnis zwischen <i>Producer</i>, Partitionen und <i>Consumer</i> [2].</center>
 
 Infolgedessen ist es möglich und sinnvoll mehrere _Consumer_ für verschiedene _Partitionen_, wie in der folgenden Grafik abgebildet, zu verwenden. Dies beugt den beschrieben Flaschenhals vor, da nicht ein einziger _Consumer_ alle Nachrichten verarbeiten muss.
 
-![Partitionen zur Parallelisierung.](./img/kafka-partition-parallelism.webp "Partitionen zur Parallelisierung.")
+![Partitionen zur Parallelisierung.](./assets/kafka-partition-parallelism.webp "Partitionen zur Parallelisierung.")
 
 <center style="font-size: 75%;">Partitionen zur Parallelisierung [4].</center>
