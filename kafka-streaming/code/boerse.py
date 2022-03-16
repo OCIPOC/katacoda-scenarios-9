@@ -9,7 +9,6 @@ SERVER = 'localhost:9092'
 NUMBER_OF_STOCKS = 2
 
 last_price = [50] * NUMBER_OF_STOCKS
-
 producer = KafkaProducer(
     bootstrap_servers=SERVER
 )
