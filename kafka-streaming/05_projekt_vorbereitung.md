@@ -13,7 +13,7 @@ kafka-topics.sh \
     --replication-factor 1 \
     --partitions 2 \
     --bootstrap-server=localhost:9092
-```{{execute}}
+```{{execute T1}}
 
 Falls das _Topic_ erfolgreich angelegt wurde, erscheint folgende Ausgabe:
 
@@ -28,7 +28,7 @@ kafka-topics.sh \
     --describe \
     --topic "Aktienkurse" \
     --bootstrap-server localhost:9092
-```{{execute}}
+```{{execute T1}}
 
 Erwartete Ausgabe:
 
@@ -42,6 +42,6 @@ Topic: Aktienkurse      TopicId: xxxxxxxxxxxxxxxxxxxxxx PartitionCount: 2       
 
 Da die Umsetzung in Python geschieht, wird das Python-Paket `kafka-python` verwendet, um die Realisierung durchzuführen. Mit folgendem Befehl kann das Modul installiert werden:
 
-`python3 -m pip install kafka-python==2.0.2`{{execute}}
+`python3 -m pip install kafka-python==2.0.2`{{execute T1}}
 
 Dieses Paket ist lediglich bis zur _Apache Kafka_ Version 2.4 getestet (benutzte Version: 3.1.0), allerdings ist das Server-Protokoll rückwärtskompatibel, weshalb dieses Paket keine Probleme bereiten sollte [5].

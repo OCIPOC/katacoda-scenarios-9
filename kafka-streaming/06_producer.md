@@ -2,7 +2,7 @@
 
 Um den _Producer_ beziehungsweise die Börse zu simulieren, wird zunächst eine neue Python-Datei angelegt:
 
-`touch boerse.py`{{execute}}
+`touch boerse.py`{{execute T1}}
 
 Die Datei `boerse.py`{{open}} lässt sich nun im Editor öffnen. Zunächst werden die erforderlichen Bibliotheken importiert:
 
@@ -75,6 +75,6 @@ if __name__ == '__main__':
 
 Das Skript `boerse.py`{{open}} generiert zufällige Börsenkurs, die an das _Topic_ "Aktienkurse" des _Apache Kafka_ Servers gesendet werden. Kursänderungen einer Aktie werden immer in der gleichen Partition gespeichert. Das Skript kann man wie folgt starten:
 
-`python3 boerse.py`{{execute}}
+`python3 boerse.py`{{execute T2}}
 
 Im Terminal sollten jetzt Kursänderungen der Aktien `0` und `1` regelmäßig erscheinen. Wir lassen den Prozess vorerst laufen und widmen uns dem Skript für Aktionär\*innen im nächsten Kapitel ...
