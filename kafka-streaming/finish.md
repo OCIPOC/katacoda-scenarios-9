@@ -1,12 +1,13 @@
 Herzlichen Glückwunsch! Sie habe das Szenario erfolgreich abgeschlossen.
 
-# Vermittelte Inhalte
+# Reflexion
 
--   Wofür wird _Kafka_ verwendet und was sind Eigenschaften?
--   Installation von _Kafka_.
--   Funktionsweise von _Kafka_.
--   Ein- / Auslesen von Daten.
--   Implementation eines _Messaging-Systems_ für fiktive Aktienkurse in _Python_.
+Sie besitzen nun ein grundlegendes Verständnis über die theoretischen Grundlagen sowie Funktionsweisen der _Streaming-Plattform_ _Apache Kafka_ und wissen, wie Sie die open-source Software installieren. Außerdem haben Sie einen _Producer_ in _Python_ entwickelt, der als Börse fungiert und Updates zu Aktienkursen an ein von Ihnen erstelltes _Topic_ sendet. Sie haben zusätzlich einen _Consumer_ programmiert, der für Aktionär\*innen aus den _Partitionen_ des _Topics_ die jeweiligen Aktienkurse streamt. Falls Sie sich darüber hinaus noch weiter mit _Kafka_ auseinandersetzen wollen, können Sie in der Sektion "Nächste Schritte" fündig werden.
+
+# Nächste Schritte
+
+-   In der [offiziellen _Kafka_ Dokumentation](https://kafka.apache.org/30/documentation.html) lassen sich genau Definitionen und auch Anleitungen finden.
+-   Falls Sie tiefer in die Materie von _Apache Kafka_ einsteigen möchten: [2]
 
 # Literaturverzeichnis
 

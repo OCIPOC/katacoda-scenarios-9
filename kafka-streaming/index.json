@@ -2,12 +2,12 @@
     "title": "Praktische Einführung in Apache Kafka",
     "description": "Einführung in die Grundlagen und Implementation eines Messaging-Systems für fiktive Aktienkurse in Python.",
     "difficulty": "Anfänger",
-    "time": "15 Minuten",
+    "time": "10 Minuten",
     "details": {
         "steps": [
             {
-                "title": "Abstract",
-                "text": "00_abstract.md"
+                "title": "Interaktionsmöglichkeiten",
+                "text": "00_interaktionsmoeglichkeiten.md"
             },
             {
                 "title": "Einführung",
@@ -36,10 +36,6 @@
             {
                 "title": "Consumer erstellen",
                 "text": "07_consumer.md"
-            },
-            {
-                "title": "Reflexion & Ausblick",
-                "text": "08_reflexion_ausblick.md"
             }
         ],
         "intro": {

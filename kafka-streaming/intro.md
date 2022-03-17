@@ -1,6 +1,6 @@
-# Beschreibung
+# Abstract
 
-In diesem Szenario lernen Sie die weit verbreitete _Streaming-Plattform Apache_ _Kafka_ und dessen Eigenschaften kennen. Dabei werden Themen von den Grundlagen bis zur Integration im Kontext eines _Python-Programms_, anhand eines praktischen Beispiels, behandelt.
+In diesem Szenario lernen Sie die weit verbreitete _Streaming-Plattform_ _Apache Kafka_ und dessen Eigenschaften kennen. Dazu werden zunächst die theoretischen Grundlagen erläutert und anschließend die Installation der _open-source Software_ durchgeführt. Außerdem wird die Funktionsweise von _Kafka_ aufgezeigt und eine praktische Umsetzung eines Beispielprojektes durchgeführt. Das Ziel des Beispielprojektes ist es, Aktionär\*innen aktuelle Börsenkurse von Aktien in Echtzeit verfügbar zu machen, wobei ein Kursgenerator entwickelt wird, der die Kurse zu Testzwecken zufällig generiert.
 
 # Lernziele
 
@@ -14,20 +14,18 @@ In diesem Szenario lernen Sie die weit verbreitete _Streaming-Plattform Apache_ 
 
 Dieses Szenario richtet sich an Anfänger und es sich keine Vorkenntnisse über _Apache Kafka_ erforderlich.
 
-Zum Nachvollziehen sind grundlegende Kenntnisse der _Unix-Shell_, spezifischer `bash`, und in _Python_ hilfreich.
+Zum Nachvollziehen sind grundlegende Kenntnisse der _Unix-Shell_, spezifischer `bash`, und in _Python_ hilfreich, aber nicht notwendig.
 
 # Inhaltsverzeichnis
 
-1. Abstract
-2. Einführung
-3. Installation
-4. Funktionsweise
-5. Projektvorstellung
-6. Projektvorbereitungen
-7. _Producer_ bzw. Börsensimulation
-8. _Consumer_ bzw. für Aktionär*innen
-9. Reflexion und Ausblick
+1. Einführung
+2. Installation
+3. Funktionsweise
+4. Projektvorstellung
+5. Projektvorbereitungen
+6. _Producer_ bzw. Börsensimulation
+7. _Consumer_ bzw. für Aktionär*innen
 
 # Anmerkung
 
-Dieses Katacoda ist im Rahmen einer Prüfungsleistung in der Vorlesung "Data Warehouse" an der dualen Hochschule Baden-Württemberg entstanden (2022).
+Dieses Katacoda ist im Rahmen einer Prüfungsleistung in der Vorlesung "Data Warehouse" an der [dualen Hochschule Baden-Württemberg](https://www.dhbw-stuttgart.de/) entstanden (2022). Die Vorlesung wurde von [Andreas Buckenhofer](https://www.katacoda.com/buckenhofer) gehalten.
