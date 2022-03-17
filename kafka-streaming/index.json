@@ -6,10 +6,6 @@
     "details": {
         "steps": [
             {
-                "title": "Interaktionsmöglichkeiten",
-                "text": "00_interaktionsmoeglichkeiten.md"
-            },
-            {
                 "title": "Einführung",
                 "text": "01_einfuehrung.md"
             },
