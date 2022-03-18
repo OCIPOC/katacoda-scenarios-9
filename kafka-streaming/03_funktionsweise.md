@@ -14,7 +14,7 @@ _Partitionen_ in _Topis_ lassen sich auch verwenden, um Untergruppen zu bilden. 
 
 # Producer
 
-_Producer_ werden die Teilenehmer in einem System genannt, die neue Nachrichten in das System einspeisen. Diese Nachrichten werden dann, wie in der untenstehenden Abbildung, in dem _Topic_ beziehungsweise dessen _Partitionen_ persistiert [2].
+_Producer_ werden die Teilnehmer in einem System genannt, die neue Nachrichten in das System einspeisen. Diese Nachrichten werden dann, wie in der untenstehenden Abbildung, in dem _Topic_ beziehungsweise dessen _Partitionen_ persistiert [2].
 
 # Consumer
 
