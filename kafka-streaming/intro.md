@@ -12,7 +12,7 @@ In diesem Szenario lernen Sie die weit verbreitete _Streaming-Plattform_ _Apache
 
 # Voraussetzungen
 
-Dieses Szenario richtet sich an Anfänger und es sich keine Vorkenntnisse über _Apache Kafka_ erforderlich.
+Dieses Szenario richtet sich an Anfänger und es sind keine Vorkenntnisse über _Apache Kafka_ erforderlich.
 
 Zum Nachvollziehen sind grundlegende Kenntnisse der _Unix-Shell_, spezifischer `bash`, und in _Python_ hilfreich, aber nicht notwendig.
 
