@@ -54,4 +54,6 @@ Die von `boerse.py`{{open}} generierten Kursänderungen lassen sich nun durch da
 | false   | true    | `python3 aktionaer.py 1`{{execute T4}}   |
 | true    | true    | `python3 aktionaer.py 0 1`{{execute T5}} |
 
+<center style="font-size: 75%;"><b>Anmerkung:</b> Zum Ausführen der Befehle werden separate Terminals geöffnet. Aufgrund eines Bugs von Katacoda, ist es erforderlich, ein zweites mal auf den Befehl zu klicken, um diesen auszuführen.</center>
+
 Abhängig von der gewählten Option werden Kursänderungen zu Aktie 0, 1 oder beiden angezeigt. Es ist auch möglich mehrere _Consumer_ simultan auszuführen.

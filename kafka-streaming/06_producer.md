@@ -81,4 +81,6 @@ Das Skript `boerse.py`{{open}} generiert zufällige Börsenkurs, die an das _Top
 
 `python3 boerse.py`{{execute T2}}
 
+<center style="font-size: 75%;"><b>Anmerkung:</b> Zum Ausführen der Befehle werden separate Terminals geöffnet. Aufgrund eines Bugs von Katacoda, ist es erforderlich, ein zweites mal auf den Befehl zu klicken, um diesen auszuführen.</center>
+
 Im Terminal sollten jetzt Kursänderungen der Aktien `0` und `1` regelmäßig erscheinen. Wir lassen den Prozess vorerst laufen und widmen uns dem Skript für Aktionär\*innen im nächsten Kapitel ...
