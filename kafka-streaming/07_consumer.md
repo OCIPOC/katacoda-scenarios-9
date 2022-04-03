@@ -21,7 +21,7 @@ SERVER = 'localhost:9092'
 
 Beim Start des Skriptes sollen sich die zu beobachtenden Aktien als Kommandozeilenparameter angeben lassen, zum Beispiel `python3 aktionaer.py 0 1` um die Aktien `0` und `1` zu beobachten. Daher werden die Kommandozeilenargumente extrahiert und in die Liste `stocks` als Integer geschrieben.
 
-Dann wir der _Kafka-Consumer_ `consumer` initialisiert, wobei eine Methode zur Deserialisierung des JSON-Strings zurück zu einem _Python-Dictionary_ angeben wird. Da die Repräsentation der ausgewählten Aktien (`stocks`) den Nummern der _Partitionen_ entspricht, lassen sich mit Hilfe der Liste `stocks` die Partitionen festlegen, auf die der Consumer lauscht.
+Dann wir der _Kafka-Consumer_ `consumer` initialisiert, wobei eine Methode zur Deserialisierung des JSON-Strings zurück zu einem _Python-Dictionary_ angegeben wird. Da die Repräsentation der ausgewählten Aktien (`stocks`) den Nummern der _Partitionen_ entspricht, lassen sich mit Hilfe der Liste `stocks` die Partitionen festlegen, auf die der Consumer lauscht.
 
 Anschließend werden iterativ alle Nachrichten, analog zur Ausgabe im _Producer_, im Terminal ausgegeben.
 
