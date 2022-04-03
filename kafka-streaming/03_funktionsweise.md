@@ -6,7 +6,7 @@ Nachrichten werden in _Apache Kafka_ in _Topics_ organisiert. Ein _Topic_ wird d
 
 Ein _Topic_ besteht aus einer oder mehreren _Partitionen_. In der Einführung wurde bereits über ein "Log-basiertes _Stream-Processing-Framework_" gesprochen. Diese Analogie kommt jetzt zum Tragen, da die Datenstruktur der _Partitionen_ ähnlich aufgebaut ist. Wie bei Logs werden nämlich neue Nachrichten in einer _append-only_ Weise immer in der Reihenfolge, wie die Nachrichten eintreffen, an die _Partition_ angehängt. Bestehende Einträge werden weder editiert noch gelöscht [4].
 
-_Partitionen_ in _Topis_ lassen sich auch verwenden, um Untergruppen zu bilden. So können Beispielsweise Daten zu einem bestimmten Aktienkurs in einer eigenen Partition gehandhabt werden.
+_Partitionen_ in _Topics_ lassen sich auch verwenden, um Untergruppen zu bilden. So können beispielsweise Daten zu einem bestimmten Aktienkurs in einer eigenen Partition gehandhabt werden.
 
 ![Visualisierung Partition.](./assets/kafka-partition.png "Visualisierung Partition.")
 
@@ -24,7 +24,7 @@ Wie der Name suggeriert, konsumieren beziehungsweise verarbeiten _Consumer_ neue
 
 <center style="font-size: 75%;">Verhältnis zwischen <i>Producer</i>, Partitionen und <i>Consumer</i> [2].</center>
 
-Infolgedessen ist es möglich und sinnvoll mehrere _Consumer_ für verschiedene _Partitionen_, wie in der folgenden Grafik abgebildet, zu verwenden. Dies beugt den beschrieben Flaschenhals vor, da nicht ein einziger _Consumer_ alle Nachrichten verarbeiten muss.
+Infolgedessen ist es möglich und sinnvoll mehrere _Consumer_ für verschiedene _Partitionen_, wie in der folgenden Grafik abgebildet, zu verwenden. Dies beugt den beschriebenen Flaschenhals vor, da nicht ein einziger _Consumer_ alle Nachrichten verarbeiten muss.
 
 ![Partitionen zur Parallelisierung.](./assets/kafka-partition-parallelism.png "Partitionen zur Parallelisierung.")
 

@@ -2,7 +2,7 @@ Bevor die theoretischen Grundlagen erörtert werden, ist es erforderlich _Apache
 
 # Download
 
-Die aktuellste Version von _Apache Kafka_ lässt sich immer auf der [offiziellen Webseite](https://kafka.apache.org/downloads) finden. Zum Zeitpunkt der Erstellung dieses _Katacodas_ ist die aktuellste Version **3.1.0**, weshalb diese Version benutzt wird. Gerne können Sie sich auch für eine andere Version entscheiden, allerdings kann die Funktion des _Katacodas_ dann nicht gewährleistet werden.
+Die aktuelle Version von _Apache Kafka_ lässt sich immer auf der [offiziellen Webseite](https://kafka.apache.org/downloads) finden. Zum Zeitpunkt der Erstellung dieses _Katacodas_ ist die aktuelle Version **3.1.0**, weshalb diese Version benutzt wird. Gerne können Sie sich auch für eine andere Version entscheiden, allerdings kann die Funktion des _Katacodas_ dann nicht gewährleistet werden.
 
 Mit dem Kommando `wget` lassen sich Dateien über das HTTP-Protokoll herunterladen. Der Link zur aktuellen Version ist `https://dlcdn.apache.org/kafka/3.1.0/kafka_2.13-3.1.0.tgz`. Folglich kann die Datei wie folgt heruntergeladen werden:
 
@@ -26,7 +26,8 @@ Im Verzeichnis `kafka_2.13-3.1.0` befinden sich nun verschieden Skripte zum Kont
 
 Nun lässt sich _Kafka_ mit der Standardkonfiguration im Hintergrund starten [3]:
 
-```
+````
 zookeeper-server-start.sh kafka_2.13-3.1.0/config/zookeeper.properties > /dev/null &
 kafka-server-start.sh kafka_2.13-3.1.0/config/server.properties > /dev/null &
 ```{{execute T1}}
+````

@@ -36,7 +36,7 @@ Die Simulation basiert nicht auf echtem Kursverhalten der Börse, sondern auf Zu
 current_price = [50] * NUMBER_OF_STOCKS
 </pre>
 
-Mit Hilfe der Funktion `gen_data` lässt sich ein neuer Datenpunkt für die Aktie `stock` generieren. `stock` ist ein Integer und zeigt auf die _Partition_, die der Aktie zugeordnet ist. Zunächst wird aus dem aktuellen Wert der Aktie ein neuer gebildet, indem zufällig ein Anteil abgezogen oder hinzugefügt wird, maximal jedoch ±10%. Dann wird der neue Preis als aktueller Vermerkt und ein JSON-String mit Wert (`value`) und Zeitstempel (`timestamp`) generiert und zurückgegeben.
+Mit Hilfe der Funktion `gen_data` lässt sich ein neuer Datenpunkt für die Aktie `stock` generieren. `stock` ist ein Integer und zeigt auf die _Partition_, die der Aktie zugeordnet ist. Zunächst wird aus dem aktuellen Wert der Aktie ein neuer gebildet, indem zufällig ein Anteil abgezogen oder hinzugefügt wird, maximal jedoch ±10%. Dann wird der neue Preis als aktueller vermerkt und ein JSON-String mit Wert (`value`) und Zeitstempel (`timestamp`) generiert und zurückgegeben.
 
 <pre class="file" data-filename="boerse.py" data-target="append">
 def gen_data(stock: int) -> str:
@@ -81,6 +81,6 @@ Das Skript `boerse.py`{{open}} generiert zufällige Börsenkurs, die an das _Top
 
 `python3 boerse.py`{{execute T2}}
 
-<center style="font-size: 75%;"><b>Anmerkung:</b> Zum Ausführen der Befehle werden separate Terminals geöffnet. Aufgrund eines Bugs von Katacoda, ist es erforderlich, ein zweites mal auf den Befehl zu klicken, um diesen auszuführen.</center>
+<center style="font-size: 75%;"><b>Anmerkung:</b> Zum Ausführen der Befehle werden separate Terminals geöffnet. Aufgrund eines Bugs von Katacoda, ist es erforderlich, ein zweites Mal auf den Befehl zu klicken, um diesen auszuführen.</center>
 
 Im Terminal sollten jetzt Kursänderungen der Aktien `0` und `1` regelmäßig erscheinen. Wir lassen den Prozess vorerst laufen und widmen uns dem Skript für Aktionär\*innen im nächsten Kapitel ...
