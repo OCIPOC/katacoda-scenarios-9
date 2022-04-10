@@ -24,8 +24,8 @@ Zum Nachvollziehen sind grundlegende Kenntnisse der _Unix-Shell_, spezifischer `
 4. Projektvorstellung
 5. Projektvorbereitungen
 6. _Producer_ bzw. Börsensimulation
-7. _Consumer_ bzw. für Aktionär*innen
+7. _Consumer_ bzw. für Aktionär\*innen
 
 # Anmerkung
 
-Dieses Katacoda ist im Rahmen einer Prüfungsleistung in der Vorlesung "Data Warehouse" an der [dualen Hochschule Baden-Württemberg](https://www.dhbw-stuttgart.de/) entstanden (2022). Die Vorlesung wurde von [Andreas Buckenhofer](https://www.katacoda.com/buckenhofer) gehalten.
+Dieses Katacoda ist im Rahmen einer Prüfungsleistung in der Vorlesung "Data Warehouse" an der [Dualen Hochschule Baden-Württemberg](https://www.dhbw-stuttgart.de/) entstanden (2022). Die Vorlesung wurde von [Andreas Buckenhofer](https://www.katacoda.com/buckenhofer) gehalten.

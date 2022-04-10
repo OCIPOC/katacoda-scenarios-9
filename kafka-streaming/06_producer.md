@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
 # Ergebnis
 
-Das Skript `boerse.py`{{open}} generiert zufällige Börsenkurs, die an das _Topic_ "Aktienkurse" des _Apache Kafka_ Servers gesendet werden. Kursänderungen einer Aktie werden immer in der gleichen Partition gespeichert. Das Skript kann man wie folgt starten:
+Das Skript `boerse.py`{{open}} generiert zufällige Börsenkurse, die an das _Topic_ "Aktienkurse" des _Apache Kafka_ Servers gesendet werden. Kursänderungen einer Aktie werden immer in der gleichen Partition gespeichert. Das Skript kann man wie folgt starten:
 
 `python3 boerse.py`{{execute T2}}
 
