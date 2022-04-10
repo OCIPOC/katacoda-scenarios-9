@@ -26,8 +26,7 @@ Im Verzeichnis `kafka_2.13-3.1.0` befinden sich nun verschieden Skripte zum Kont
 
 Nun lässt sich _Kafka_ mit der Standardkonfiguration im Hintergrund starten [3]:
 
-````
+```
 zookeeper-server-start.sh kafka_2.13-3.1.0/config/zookeeper.properties > /dev/null &
 kafka-server-start.sh kafka_2.13-3.1.0/config/server.properties > /dev/null &
 ```{{execute T1}}
-````
